@@ -3,9 +3,16 @@
 	"package": "net.logandark.camerashake.mixin",
 	"compatibilityLevel": "JAVA_8",
 	"mixins": [],
-	"client": ["AntiCoronavirus"],
+	"client": [
+		"MixinCamera",
+		"MixinClientPlayNetworkHandler",
+		"MixinGameRenderer",
+		"MixinKeyBinding",
+		"MixinMinecraftClient"
+	],
 	"server": [],
 	"injectors": {
-		"defaultRequire": 1
+		"defaultRequire": 1,
+		"maxShiftBy": 1
 	}
 }

@@ -1,7 +1,6 @@
 plugins {
 	id 'fabric-loom'
 	id 'maven-publish'
-	id 'org.jetbrains.kotlin.jvm'
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -15,6 +14,7 @@ minecraft {}
 
 repositories {
 	maven { url = 'https://maven.fabricmc.net/' }
+	maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -23,15 +23,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
-	//modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
-	modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
-
-	//modImplementation(fabricApi.module('fabric-resource-loader-v0', project.fabric_version))
-	//modImplementation('io.github.prospector:modmenu:1.14.6+build.31') {
-	//	exclude module: 'fabric-api' // includes bad Fabric API
-	//}
+	modCompileOnly 'com.github.qouteall.ImmersivePortalsMod:imm_ptl_core:v0.34-1.16'
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
@@ -94,5 +86,3 @@ publishing {
 		}
 	}
 }
-
-compileKotlin.kotlinOptions.jvmTarget = '1.8'

@@ -1,37 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "camerashake",
+	"id": "camera-shake",
 	"version": "${version}",
 
 	"name": "CameraShake",
 	"description": "Congrats, you made it work!",
 	"authors": ["LoganDark"],
 	"contact": {
-		"sources": "https://github.com/LoganDark/fabric-camerashake",
-		"website": "https://github.com/LoganDark/fabric-camerashake",
-		"issues": "https://github.com/LoganDark/fabric-camerashake/issues"
+		"sources": "https://github.com/LoganDark/fabric-camera-shake",
+		"website": "https://github.com/LoganDark/fabric-camera-shake",
+		"issues": "https://github.com/LoganDark/fabric-camera-shake/issues"
 	},
 
-	"custom": {},
+	"custom": {
+		"modmenu:api": true,
+		"modmenu:clientsideOnly": true
+	},
 
 	"license": "GPLv3",
-	"icon": "assets/camerashake/icon.png",
+	"icon": "assets/camera-shake/icon.png",
 
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			{
-				"adapter": "kotlin",
-				"value": "net.logandark.camerashake.CameraShake"
-			}
-		]
-	},
+	"environment": "client",
+	"entrypoints": {},
 
-	"mixins": ["camerashake.mixins.json"],
+	"mixins": ["camera-shake.mixins.json"],
 
 	"depends": {
 		"fabricloader": ">=0.8.8",
-		"fabric-language-kotlin": ">=1.3.71+build.1",
 		"minecraft": "1.16.x"
 	},
 	"suggests": {}

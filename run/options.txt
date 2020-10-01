@@ -29,11 +29,11 @@ guiScale:4
 particles:0
 maxFps:260
 difficulty:2
-graphicsMode:1
+graphicsMode:2
 ao:2
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:[]
+resourcePacks:["fabric/fabric-renderer-api-v1","fabric/fabric-networking-blockentity-v0","fabric/fabric-screen-handler-api-v1","fabric/fabric-keybindings-v0","fabric/modmenu","fabric/fabricloader","fabric/fabric-tool-attribute-api-v1","fabric/fabric-renderer-indigo","fabric/fabric-containers-v0","fabric/fabric-object-builder-api-v1","fabric/fabric-crash-report-info-v1","fabric/fabric-item-api-v1","fabric/fabric-events-interaction-v0","fabric/fabric-game-rule-api-v1","fabric/fabric-api-base","fabric/fabric-rendering-v0","fabric/fabric-rendering-v1","fabric/fabric-key-binding-api-v1","fabric/cloth-config2","fabric/fabric-rendering-data-attachment-v1","fabric/fabric-resource-loader-v0","fabric/fabric-textures-v0","fabric/fabric-content-registries-v0","fabric/fabric-tag-extensions-v0","fabric/fabric-rendering-fluids-v1","fabric/fabric-registry-sync-v0","fabric/camera-shake","fabric/fabric-blockrenderlayer-v1","fabric/fabric-lifecycle-events-v1","fabric/fabric-mining-levels-v0","fabric/fabric-renderer-registries-v1","fabric/fabric-events-lifecycle-v0","fabric/fabric-loot-tables-v1","fabric/fabric","fabric/fabric-item-groups-v0","fabric/fabric-models-v0","fabric/fabric-networking-v0","fabric/fabric-object-builders-v0","fabric/imm_ptl_core"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -58,7 +58,7 @@ useNativeTransport:true
 mainHand:right
 attackIndicator:1
 narrator:0
-tutorialStep:movement
+tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
